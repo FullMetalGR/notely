@@ -19,7 +19,4 @@ jobs:
           node-version: 18
 
       - name: Check Node version
-        run: node --version
-      
-      - name: Exit successfully
-        run: (exit 0)
+        run: (node --version)
