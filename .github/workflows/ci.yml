@@ -32,9 +32,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Style
-        run: npm run format:check
-
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -42,3 +39,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Style
+        run: npm run format:check
